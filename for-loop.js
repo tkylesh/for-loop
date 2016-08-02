@@ -6,6 +6,9 @@
   //increment by 10
   //console.log(i)
   //stop if i > 120
+  for (var i= 5; i < 120; i+= 10){
+  	console.log(i);
+  }
 
 
 //2.  Decrement by Division
@@ -14,7 +17,9 @@
   //each loop divide i/2
   //console.log(i)
   //stop when i === 1
-
+for (var i=4096; i !== 1; i/=2){
+	console.log(i);
+}
 
 //3. Array Iterations
   //create array
@@ -24,6 +29,12 @@
   //ex: President #1 was George Washington
         //President #2 was John Adams
 
+var arr = ["George Washington","John Adams","Thomas Jefferson"];
+
+for (var i=0; i < arr.length; i++){
+	console.log((i+1)+": "+ arr[i]);
+}
+
 
 
 
@@ -31,7 +42,7 @@
   //Use key value for-loop to iterate over object
   //console.log() name of keys in the object
 
-/*here's the object:
+/*here's the object:*/
 
 var antSpecies = {
   argentine: {},
@@ -45,4 +56,8 @@ var antSpecies = {
   glider: {},
   honeyPot: {},
   jackJumper: {}
-}*/
+}
+
+for (var keys in antSpecies){
+	console.log(keys);
+}
